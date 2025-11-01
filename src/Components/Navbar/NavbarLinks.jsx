@@ -1,5 +1,6 @@
 // src/components/NavbarLinks.jsx
 import { NavLink, Link } from "react-router-dom";
+import Register from "../../Assets/Resgister";
 
 const NavbarLinks = ({ isMobile, onLinkClick }) => {
   const linkClasses = ({ isActive }) =>
@@ -31,10 +32,9 @@ const NavbarLinks = ({ isMobile, onLinkClick }) => {
       <li>
         <Link
           to="/events"
-          className="bg-cyan-500 text-white font-medium px-4 py-2 rounded-lg hover:bg-cyan-600 transition-colors"
           onClick={onLinkClick}
-        >
-          Register
+          >
+          <Register/>
         </Link>
       </li>
     </ul>
