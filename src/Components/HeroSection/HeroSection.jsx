@@ -1,4 +1,7 @@
+// src/components/HeroSection/HeroSection.jsx
 import React, { useEffect, useState } from "react";
+import HeroSlide from "./HeroSlide";
+import HeroContent from "./HeroContent";
 
 const images = [
   "/HeroSection/image1.webp",
@@ -10,6 +13,7 @@ const images = [
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Auto-slide every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -19,39 +23,16 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-[75vh] w-full overflow-hidden flex items-center justify-center">
-      {/* Background Images */}
+      {/* Slides */}
       {images.map((img, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-            index === currentIndex ? "opacity-100" : "opacity-0"
-          }`}
-          style={{
-            backgroundImage: `url(${img})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
+        <HeroSlide key={index} img={img} isActive={index === currentIndex} />
       ))}
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Text Content */}
-      <div className="relative z-10 text-center text-white px-4">
-        <h1 className="text-4xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">
-          Discover & Experience Events
-        </h1>
-        <p className="text-lg md:text-2xl mb-6 opacity-90">
-          Join the most exciting fests, meetups, and workshops near you.
-        </p>
-        <a
-          href="/events"
-          className="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-6 py-3 rounded-lg transition-all"
-        >
-          Explore Events
-        </a>
-      </div>
+      {/* Text */}
+      <HeroContent />
 
       {/* Dots Navigation */}
       <div className="absolute bottom-6 flex justify-center w-full space-x-2 z-10">
