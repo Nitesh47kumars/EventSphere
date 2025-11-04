@@ -1,5 +1,5 @@
 import React from "react";
-import eventsData from "./mockEvents.json";
+import eventsData from "./MockEvents.json";
 import EventCard from "./EventCard";
 
 const HighlightEvents = () => {
