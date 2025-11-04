@@ -1,4 +1,3 @@
-// src/components/Highlights/HighlightEvents.jsx
 import React from "react";
 import eventsData from "./mockEvents.json";
 import EventCard from "./EventCard";
@@ -10,6 +9,9 @@ const HighlightEvents = () => {
     (event) => new Date(event.date) > today
   );
 
+  const limitedFeatured = featuredEvents.slice(0, 3); // show top 3 featured
+  const limitedUpcoming = upcomingEvents.slice(0, 3); // show top 3 upcoming
+
   return (
     <section className="max-w-6xl mx-auto py-16 px-4">
       {/* Featured Events */}
@@ -18,7 +20,7 @@ const HighlightEvents = () => {
           🌟 Featured Events
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
-          {featuredEvents.map((event) => (
+          {limitedFeatured.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
         </div>
@@ -30,7 +32,7 @@ const HighlightEvents = () => {
           📅 Upcoming Events
         </h2>
         <div className="grid md:grid-cols-3 gap-6">
-          {upcomingEvents.map((event) => (
+          {limitedUpcoming.map((event) => (
             <EventCard key={event.id} event={event} />
           ))}
         </div>
