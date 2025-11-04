@@ -1,39 +1,38 @@
 [
-    {
-      "id": 1,
-      "title": "Tech Innovators Meetup 2025",
-      "date": "2025-11-10",
-      "category": "Technology",
-      "image": "/events/tech-meetup.jpg",
-      "description": "Join developers and entrepreneurs for a day of innovation.",
-      "featured": true
-    },
-    {
-      "id": 2,
-      "title": "Music Fest Night",
-      "date": "2025-11-15",
-      "category": "Entertainment",
-      "image": "/events/music-fest.jpg",
-      "description": "A night full of rhythm, lights, and live performances.",
-      "featured": true
-    },
-    {
-      "id": 3,
-      "title": "Design Thinking Workshop",
-      "date": "2025-11-20",
-      "category": "Workshop",
-      "image": "/events/design-workshop.jpg",
-      "description": "A hands-on session on creative problem-solving.",
-      "featured": false
-    },
-    {
-      "id": 4,
-      "title": "Startup Expo 2025",
-      "date": "2025-12-01",
-      "category": "Business",
-      "image": "/events/startup-expo.jpg",
-      "description": "Where startups meet investors and innovators.",
-      "featured": false
-    }
-  ]
-  
+  {
+    "id": 1,
+    "title": "Tech Innovators Meetup 2025",
+    "date": "2025-11-10",
+    "category": "Technology",
+    "image": "/Events/Event1.jpg",
+    "description": "Join developers and entrepreneurs for a day of innovation.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Music Fest Night",
+    "date": "2025-11-15",
+    "category": "Entertainment",
+    "image": "/Events/Event2.jpg",
+    "description": "A night full of rhythm, lights, and live performances.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Design Thinking Workshop",
+    "date": "2025-11-20",
+    "category": "Workshop",
+    "image": "/Events/Event3.jpg",
+    "description": "A hands-on session on creative problem-solving.",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Startup Expo 2025",
+    "date": "2025-12-01",
+    "category": "Business",
+    "image": "/Events/Event4.jpg",
+    "description": "Where startups meet investors and innovators.",
+    "featured": false
+  }
+]
