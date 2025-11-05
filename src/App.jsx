@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
 import HomePage from "./HomePage";
 import Events from "./Components/Events/Events";
+import Contact from "./Components/Contact/Contact";
 
 const App = () => {
   const Router = createBrowserRouter([
@@ -17,6 +18,10 @@ const App = () => {
         {
           path: "events",
           element: <Events />,
+        },
+        {
+          path: "contact",
+          element: <Contact />,
         },
       ],
     },
