@@ -13,7 +13,7 @@ const HighlightEvents = () => {
   const limitedUpcoming = upcomingEvents.slice(0, 3); // show top 3 upcoming
 
   return (
-    <section className="max-w-6xl mx-auto py-16 px-4">
+    <section className="max-w-6xl mx-auto py-10 px-4">
       {/* Featured Events */}
       <div className="mb-12">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
