@@ -14,7 +14,6 @@ const HighlightEvents = () => {
 
   return (
     <section className="max-w-6xl mx-auto py-10 px-4 mb-20">
-      {/* Featured Events */}
       <div className="mb-12">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
           🌟 Featured Events
@@ -26,7 +25,6 @@ const HighlightEvents = () => {
         </div>
       </div>
 
-      {/* Upcoming Events */}
       <div>
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8">
           📅 Upcoming Events

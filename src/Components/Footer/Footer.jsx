@@ -1,4 +1,3 @@
-// src/components/Footer/Footer.jsx
 import React from "react";
 import FooterBrand from "./FooterBrand";
 import FooterLinks from "./FooterLinks";
@@ -13,7 +12,6 @@ const Footer = () => {
         <FooterSocial />
       </div>
 
-      {/* Divider */}
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-500 text-sm">
         © {new Date().getFullYear()} EventSphere. All rights reserved.
       </div>

@@ -1,4 +1,3 @@
-// src/components/Footer/FooterSocial.jsx
 import React from "react";
 import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
@@ -10,7 +9,6 @@ const FooterSocial = () => {
         Follow me on social media for updates and event announcements.
       </p>
       <div className="flex space-x-4 text-lg">
-        {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/nitesh-kumar-b18348346/"
           target="_blank"
@@ -20,7 +18,6 @@ const FooterSocial = () => {
           <FaLinkedinIn />
         </a>
 
-        {/* Instagram */}
         <a
           href="https://www.instagram.com/nitesh47kumars/"
           target="_blank"
@@ -30,7 +27,6 @@ const FooterSocial = () => {
           <FaInstagram />
         </a>
 
-        {/* Twitter (X) */}
         <a
           href="https://x.com/Niteshshah028"
           target="_blank"

@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React, { useState } from "react";
 import NavbarLogo from "./NavbarLogo";
 import NavbarLinks from "./NavbarLinks";

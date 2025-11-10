@@ -1,4 +1,3 @@
-// src/components/HeroSection/HeroSection.jsx
 import React, { useEffect, useState } from "react";
 import HeroSlide from "./HeroSlide";
 import HeroContent from "./HeroContent";
@@ -13,7 +12,6 @@ const images = [
 const HeroSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Auto-slide every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % images.length);
@@ -23,18 +21,14 @@ const HeroSection = () => {
 
   return (
     <section className="relative h-[75vh] w-full overflow-hidden flex items-center justify-center">
-      {/* Slides */}
       {images.map((img, index) => (
         <HeroSlide key={index} img={img} isActive={index === currentIndex} />
       ))}
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Text */}
       <HeroContent />
 
-      {/* Dots Navigation */}
       <div className="absolute bottom-6 flex justify-center w-full space-x-2 z-10">
         {images.map((_, index) => (
           <button

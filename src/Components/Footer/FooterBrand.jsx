@@ -1,4 +1,3 @@
-// src/components/Footer/FooterBrand.jsx
 import React from "react";
 
 const FooterBrand = () => {

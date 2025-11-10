@@ -1,4 +1,3 @@
-// src/components/HeroSection/HeroSlide.jsx
 import React from "react";
 
 const HeroSlide = ({ img, isActive }) => {

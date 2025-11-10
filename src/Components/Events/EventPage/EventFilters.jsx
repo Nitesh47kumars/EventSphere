@@ -11,7 +11,6 @@ const EventFilters = ({
 }) => {
   return (
     <div className="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
-      {/* Search Bar */}
       <input
         type="text"
         placeholder="Search by event name..."
@@ -20,7 +19,6 @@ const EventFilters = ({
         className="border border-gray-300 rounded-md px-4 py-2 w-full md:w-1/3 focus:outline-none focus:ring-2 focus:ring-cyan-500"
       />
 
-      {/* Category Filter */}
       <select
         value={category}
         onChange={(e) => setCategory(e.target.value)}
@@ -33,7 +31,6 @@ const EventFilters = ({
         ))}
       </select>
 
-      {/* Sort Dropdown */}
       <select
         value={sortOrder}
         onChange={(e) => setSortOrder(e.target.value)}
