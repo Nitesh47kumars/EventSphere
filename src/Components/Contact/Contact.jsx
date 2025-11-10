@@ -1,4 +1,3 @@
-// src/Components/Contact/Contact.jsx
 import React from "react";
 import ContactInfo from "./ContactInfo";
 import ContactForm from "./ContactForm";

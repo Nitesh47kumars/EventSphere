@@ -31,7 +31,7 @@ const NavbarLinks = ({ isMobile, onLinkClick }) => {
       </li>
       <li>
         <Link
-          to="/events"
+          to="/authpage"
           onClick={onLinkClick}
           >
           <Register/>

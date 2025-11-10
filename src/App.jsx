@@ -4,6 +4,7 @@ import Layout from "./Layout";
 import HomePage from "./HomePage";
 import Events from "./Components/Events/Events";
 import Contact from "./Components/Contact/Contact";
+import AuthPage from "./Components/AuthPage/AuthPage";
 
 const App = () => {
   const Router = createBrowserRouter([
@@ -22,6 +23,10 @@ const App = () => {
         {
           path: "contact",
           element: <Contact />,
+        },
+        {
+          path: "authpage",
+          element: <AuthPage />,
         },
       ],
     },

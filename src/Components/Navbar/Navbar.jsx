@@ -11,16 +11,14 @@ const Navbar = () => {
 
   return (
     <nav className="bg-gray-900 text-white sticky top-0 z-50 shadow-md">
-      <div className="px-5 mx-auto py-3 flex justify-between items-center">
-        {/* Logo */}
+      <div className="px-5 mx-auto py-5 flex justify-between items-center">
+        
         <NavbarLogo />
 
-        {/* Desktop Links */}
         <div className="hidden md:flex">
           <NavbarLinks onLinkClick={closeMenu} />
         </div>
 
-        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
