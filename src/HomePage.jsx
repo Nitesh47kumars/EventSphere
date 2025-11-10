@@ -1,6 +1,6 @@
 import React from "react";
 import HeroSection from "./Components/HeroSection/HeroSection";
-import HighlightEvents from "./Components/Hightlights/HighlightEvents";
+import HighlightEvents from "./Components/Events/Hightlights/HighlightEvents";
 
 const HomePage = () => {
   return (

@@ -2,12 +2,13 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
 import HomePage from "./HomePage";
-import Events from "./Components/Events/Events";
+import Events from "./Components/Events/EventPage/Events";
 import Contact from "./Components/Contact/Contact";
 import AuthPage from "./Components/AuthPage/AuthPage";
+import EventDetail from "./Components/Events/EventDetails/EventDetail";
 
 const App = () => {
-  const Router = createBrowserRouter([
+  const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
@@ -21,6 +22,10 @@ const App = () => {
           element: <Events />,
         },
         {
+          path: "events/:id",
+          element: <EventDetail />,
+        },
+        {
           path: "contact",
           element: <Contact />,
         },
@@ -32,7 +37,7 @@ const App = () => {
     },
   ]);
 
-  return <RouterProvider router={Router} />;
+  return <RouterProvider router={router} />;
 };
 
 export default App;

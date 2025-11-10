@@ -1,6 +1,5 @@
-// src/pages/Events.jsx
 import React, { useState } from "react";
-import eventsData from "../Hightlights/MockEvents.json";
+import eventsData from "../MockEvents.json";
 import EventCard from "../Hightlights/EventCard";
 
 const Events = () => {
