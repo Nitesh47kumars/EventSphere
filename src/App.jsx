@@ -6,12 +6,14 @@ import Events from "./Components/Events/EventPage/Events";
 import Contact from "./Components/Contact/Contact";
 import AuthPage from "./Components/AuthPage/AuthPage";
 import EventDetail from "./Components/Events/EventDetails/EventDetail";
+import ErrorPage from "./ErrorPage"
 
 const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Layout />,
+      errorElement: <ErrorPage/> ,
       children: [
         {
           index: true,
